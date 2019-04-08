@@ -2,3 +2,43 @@
     padding: 10px 0;
     background-color: #1e94d2;
 }
+
+.navbar-toggle {
+    color: #ffffff
+}
+
+.navbar-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 210px;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    background-color: deepskyblue;
+    list-style: none;
+}
+
+.navbar-usuario {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-menu-item {
+    padding: 15px;
+}
+
+.navbar-menu-item a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.navbar-menu-item a:hover {
+    color: #ffffff;
+}
