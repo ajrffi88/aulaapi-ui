@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CategoriaFiltro, CategoriaService } from '../categoria.service';
+import { LazyLoadEvent } from 'primeng/components/common/api';
 
 @Component({
   selector: 'app-categorias-pesquisa',
@@ -28,4 +29,9 @@ export class CategoriasPesquisaComponent implements OnInit {
 
   }
 
+  aoMudarPagina(event: LazyLoadEvent) {
+    const pagina = event.first/event.rows;
+    this.pesquisar(pagina);
+  }
+  
 }
